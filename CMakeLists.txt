@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.30)
-project(adventure_test2)
+project(adventure-test2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(adventure_test2 main.cpp)
+set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc -static-libstdc++")
+
+add_executable(adventure-test2 main.cpp)
